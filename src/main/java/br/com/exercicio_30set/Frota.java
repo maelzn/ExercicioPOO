@@ -1,6 +1,6 @@
 package br.com.exercicio_30set;
 
-public class TesteVeiculos {
+public class Frota {
     public static void main(String[] args) {
         // Criando a frota com diferentes tipos de veículos
         Veiculo[] frota = {

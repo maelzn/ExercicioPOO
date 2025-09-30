@@ -1,6 +1,6 @@
 package br.com.exercicio_30set_2;
 
-public class Zoologico {
+public class Zoologico_Completo {
     public static void main(String[] args) {
         Animal[] animais = {
                 new Cachorro("Rex", 3, "Labrador"),
