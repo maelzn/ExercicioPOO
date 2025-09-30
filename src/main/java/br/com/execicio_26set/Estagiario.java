@@ -1,6 +1,10 @@
 package br.com.execicio_26set;
 
-public class Estagiario extends Funcionario {
+public class
+
+
+
+Estagiario extends Funcionario {
 
     private int horasTrabalhadas;
     private Double valorHoraTrabalhada;
