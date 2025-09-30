@@ -5,7 +5,9 @@ public class Zoologico {
         Animal[] animais = {
                 new Cachorro("Rex", 3, "Labrador"),
                 new Gato("Mimi", 2, true),
-                new Passaro("Piu", 1, 15.5)
+                new Passaro("Piu", 1, 15.5),
+                new Coelho("Bunny", 1, "Branco"),
+                new Cavalo("Relâmpago", 5, "Quarto de Milha")
         };
 
         System.out.println("=== SOM DOS ANIMAIS ===");
@@ -18,14 +20,19 @@ public class Zoologico {
             animal.mover();
         }
 
-        System.out.println("\n=== INFORMACOES DETALHADAS ===");
+        System.out.println("\n=== INFORMAÇÕES DETALHADAS ===");
         for (Animal animal : animais) {
             animal.exibirInfo();
 
-            // Downcasting seguro
-            if (animal instanceof Cachorro) {
-                ((Cachorro) animal).abanarRabo();
+            // Ações específicas
+            if (animal instanceof Cachorro cachorro) {
+                cachorro.abanarRabo();
+            } else if (animal instanceof Coelho coelho) {
+                coelho.pular();
+            } else if (animal instanceof Cavalo cavalo) {
+                cavalo.correr();
             }
+
             System.out.println("---");
         }
     }
