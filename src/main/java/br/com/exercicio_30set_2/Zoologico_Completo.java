@@ -12,7 +12,7 @@ public class Zoologico_Completo {
 
         System.out.println("=== SOM DOS ANIMAIS ===");
         for (Animal animal : animais) {
-            animal.emitirSom(); // Polimorfismo em ação
+            animal.emitirSom();
         }
 
         System.out.println("\n=== MOVIMENTO ===");
@@ -24,7 +24,7 @@ public class Zoologico_Completo {
         for (Animal animal : animais) {
             animal.exibirInfo();
 
-            // Ações específicas
+
             if (animal instanceof Cachorro cachorro) {
                 cachorro.abanarRabo();
             } else if (animal instanceof Coelho coelho) {
